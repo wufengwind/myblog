@@ -1,0 +1,133 @@
+body {
+    margin: auto;
+    background-image: url("../img/login.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.top {
+    height: 25%;
+    width: 100%;
+    /*min-height: 100px;*/
+    border: 1px solid blue;
+    margin-top: 0px;
+}
+
+.middle {
+    margin: auto;
+    width: 60%;
+    /*height: 65%;*/
+    /*border: 1px solid rebeccapurple;*/
+    margin-top: 0px;
+}
+
+div.middle div {
+    float: left;
+    width: 49%;
+    height: 500px;
+    border: 2px solid pink;
+    border-radius: 8px;
+    margin: 1px 1px;
+}
+
+div.middle div p {
+    /*padding: 10px;*/
+    margin-top: 10px;
+    font-size: 30px;
+    color: brown;
+}
+
+.bottom {
+    height: 1px;
+    width: 100%;
+    /*border: 1px solid black;*/
+    margin-top: 0px;
+}
+
+.header {
+    /*background-color: #F1F1F1;*/
+    text-align: left;
+    color: aliceblue;
+    /*padding: 2px;*/
+    /*opacity: 0.8;*/
+}
+
+div.header h1 {
+    padding-left: 30px;
+    font-size: 40px;
+    font-family: italic, Times, serif;
+    font-style: italic;
+}
+
+div.middle div font {
+    display: block;
+    margin-left: 40px;
+    font-size: 30px;
+    color: brown;
+    margin-top: 50px;
+
+}
+
+div.middle div input[type=text], input[type=password] {
+    align-content: center;
+    line-height: 30px;
+    margin-left: 40px;
+    border-width: 0px;
+    border-radius: 4px;
+    opacity: 0.8;
+    width: 80%;
+    outline: none;
+    font-size: 25px;
+    color: rebeccapurple;
+
+}
+
+input[type=submit],input[type=button]{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 42px;
+    margin-left: 40px;
+    /*margin-bottom: 2px;*/
+    height: 45px;
+    width: 80%;
+    align-content: center;
+    /*line-height: 100%;*/
+    font-size: 30px;
+    color: white;
+    background: brown;
+    border-width: 0px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    /*display: block;*/
+
+}
+
+button{
+    margin-top: 42px;
+    margin-left: 40px;
+    /*margin-bottom: 2px;*/
+    height: 45px;
+    width: 80%;
+    align-content: center;
+    /*line-height: 100%;*/
+    font-size: 30px;
+    color: white;
+    background: brown;
+    border-width: 0px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+}
+div.middle:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    div.middle div {
+        width: 100%;
+    }
+}

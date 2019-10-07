@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Title</title>
+    <script src="{% static 'js/login.js' %}"></script>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <h1>你的Blog</h1>
+</div>
+<div class="middle">
+    <div>
+        <form action="/register/" method="post" id="for">
+            {% csrf_token %}
+            <p>注册</p>
+            <font>用户名</font>
+            <input type="text" name="re_name">
+            <font>密码</font>
+            <input type="password" name="re_pass" id="re_pass">
+            <font>确认密码</font>
+            <input type="password" name="re_pass2" id="re_pass2">
+            <input onclick="sub()" type="button"  value="提 交"></input>
+        </form>
+    </div>
+    <div>
+        <form action="/login/" method="post" >
+            {% csrf_token %}
+            <p>登录</p>
+            <font style="margin-top: 100px">用户名</font>
+            <input type="text" id="name" name="name">
+            <font style="margin-top: 67px">密码</font>
+            <input type="password" id="pass" name="pass">
+            <input type="submit"   value="确 认" style="margin-top: 92px;" >
+        </form>
+    </div>
+</div>
+<div class="bottom"></div>
+</body>
+</html>

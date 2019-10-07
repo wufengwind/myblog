@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link href="{% static 'css/write.css' %}" rel="stylesheet">
+    <script src="{% static 'js/write.js' %}"></script>
+    <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            CKEDITOR.replace('description',{height: '410px'});
+        };
+    </script>
+</head>
+<body>
+<div class="c">
+    <a href="/index/"><button>首页</button></a>
+    <a href=""><button>主页</button></a>
+    <a href="/index/essay/"><button>返回</button></a>
+    <a href="/login/"><button>退出</button></a>
+</div>
+<form method="post" action="/index/pulish/">
+    {% csrf_token %}
+    <div class="b" id="editor">
+        <p>
+            <select name="select" id="select" style="width: 100px;text-align: center;color: #3b4249">
+                <option value="操作系统">操作系统</option>
+                <option value="算法攻略">算法攻略</option>
+                <option value="网站建设">网站建设</option>
+                <option value="桌面开发">桌面开发</option>
+                <option value="移动开发">移动开发</option>
+                <option value="开发工具">开发工具</option>
+                <option value="Database">Database</option>
+                <option value="散文">散文</option>
+                <option value="诗歌">诗歌</option>
+                <option value="小说">小说</option>
+                <option value="随笔">随笔</option>
+            </select>
+{#            <button>退出</button>#}
+            <button>发布</button>
+            <input type="text" name="title" placeholder="标题...">
+        </p>
+        <textarea name="description" id="description"/></textarea>
+    </div>
+</form>
+<div class="press">
+    <p>Copyright©2019吴丰 Powered by Django2.0 on Linux</p>
+</div>
+</body>
+</html>

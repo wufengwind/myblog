@@ -1,0 +1,96 @@
+body {
+    margin: auto;
+    background-image: url("../img/writes.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+div.b {
+    display: block;
+    border-radius: 15px;
+    /*background: yellow;*/
+    position: fixed;
+    width: 89%;
+    height: 587px;
+    margin: auto;
+    /*left: 100px;*/
+    overflow: auto;
+    top: 60px;
+    right: 2px;
+    /*z-index: 1;*/
+}
+div.c{
+    /*border: 1px solid black;*/
+    display: block;
+    border-radius: 15px;
+    /*background: yellow;*/
+    position: fixed;
+    width: 10%;
+    height: 400px;
+    margin: auto;
+    /*left: 100px;*/
+    overflow: auto;
+    top: 200px;
+    left: 2px;
+}
+div.c button{
+    background: white;
+    /*background: #A8A297;*/
+    width: 70%;
+    height: 30px;
+    /*opacity: 0.5;*/
+    fill-opacity: 0.8;
+    font-size: 20px;
+    color: #3b4249;
+    border-width: 0;
+    outline: none;
+    color: #3b4249;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+div.b textarea {
+    height: 587px;
+}
+div.b p select option{
+    text-align: center;
+}
+div.b p button,select{
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*display: block;*/
+    margin-right: 50px;
+    margin-bottom: 8px;
+    /*padding-right: 0;*/
+    height: 30px;
+    width: 60px;
+    border-width: 0;
+    background: white;
+    border-radius: 8px;
+    fill-opacity: 0.8;
+    outline: none;
+    font-size: 20px;
+    color: #3b4249;
+}
+.press {
+    /*background: salmon;*/
+    /*opacity: 0.8;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+div.press p{
+    text-align: center;
+    margin-bottom: 0;
+}
+input{
+    /*display: block;*/
+    height: 30px;
+    opacity: 0.8;
+    width: 300px;
+    outline: none;
+    font-size: 20px;
+    /*color: white;*/
+    border-radius: 8px;
+    border-width: 0;
+    /*color: white;*/
+}

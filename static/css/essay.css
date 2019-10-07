@@ -1,0 +1,22 @@
+body {
+    margin: auto;
+    background-image: url("../img/essay.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.back{
+    /*margin-top: 100px;*/
+    margin: 80px auto;
+    /*border: 1px solid black;*/
+    width: 80%;
+    /*height: 520px;*/
+}
+.press{
+    width: 100%;
+    margin-top: 50px;
+}
+div.press p{
+    text-align: center;
+    margin-bottom: 0;
+}
